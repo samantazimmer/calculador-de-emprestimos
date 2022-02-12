@@ -1,4 +1,5 @@
 from financiamentoVeiculo import processaFinanciamentoVeiculo
+from financiamentoCasa import processaFinanciamentoCasa
 
 def printLinha():
     print("=========================")
@@ -25,7 +26,7 @@ if opcao == 1:
     processaFinanciamentoVeiculo(nome, cpf, dataNascimento, salario, cep, quantidadeAnos)
     
 if opcao == 2:
-    print("Processando financiamento de casa")
+    processaFinanciamentoCasa(nome, cpf, salario, quantidadeAnos) 
 
 if opcao == 3:
     print("Processando financiamento de terreno")
